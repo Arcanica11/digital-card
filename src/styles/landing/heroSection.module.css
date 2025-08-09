@@ -1,0 +1,120 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--foreground);
+  padding: 80px 2rem;
+  text-align: center;
+}
+
+.darkVeilBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+  z-index: 1;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column; /* Stacked by default (mobile first) */
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.brandTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.highlightText {
+  color: #ffffff;
+}
+
+.rotatingTextContainer {
+  height: 60px;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #0070f3;
+  padding: 1.5rem;
+  border-radius: 15px;
+
+}
+
+.slogan {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.rightColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  /* Estilos para el contenedor de la imagen de soporte */
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    text-align: left;
+    padding-top: 100px;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .leftColumn {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .brandTitle {
+    font-size: 4rem;
+    /* Se restaura la visualización horizontal para PC */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos del título */
+  }
+
+  .titleWrapper {
+    flex-direction: row; /* Layout horizontal para PC */
+    align-items: center;
+    gap: 10px;
+  }
+}

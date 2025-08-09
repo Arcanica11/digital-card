@@ -1,0 +1,93 @@
+.footer {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 2rem 1rem 1rem;
+  font-family: var(--font-geist-sans);
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.logo {
+  /* Se modifica el flex-basis para que el logo no ocupe todo el ancho en móvil */
+  flex-basis: auto; 
+  margin-bottom: 0;
+}
+
+.logoStack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Espacio entre los logos */
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.section {
+  flex: 1;
+  min-width: 150px;
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #5ea5f7;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li a {
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.section li a:hover {
+  color: #5ea5f7;
+}
+
+.socialMedia {
+  flex-basis: 100%;
+}
+
+.socialMedia h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #5ea5f7;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(var(--gray-rgb), 0.7);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
+  .socialMedia {
+    flex-basis: auto;
+    text-align: right;
+  }
+}

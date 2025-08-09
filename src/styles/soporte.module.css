@@ -1,0 +1,97 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 2rem 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(var(--gray-rgb), 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faqItem {
+  background-color: rgba(var(--gray-rgb), 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.faqQuestion {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faqAnswer {
+  line-height: 1.6;
+}
+
+.contactIntro {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.75rem;
+  border: 1px solid rgba(var(--gray-rgb), 0.2);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #383838;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #005bb5;
+}
